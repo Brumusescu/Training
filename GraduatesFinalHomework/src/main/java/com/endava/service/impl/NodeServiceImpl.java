@@ -113,7 +113,6 @@ public class NodeServiceImpl implements NodeService {
 
         //change node's current parentId:
         node.setParentId(newParentId);
-        System.out.println(node);
         nodeDAO.saveNode(node);
     }
 

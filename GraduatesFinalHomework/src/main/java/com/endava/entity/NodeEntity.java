@@ -1,10 +1,8 @@
 package com.endava.entity;
 
 import org.jongo.marshall.jackson.oid.MongoId;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 public class NodeEntity {
     @MongoId
@@ -73,5 +71,18 @@ public class NodeEntity {
                 "Children: " + children + "\n" +
                 "Configuration: " + getConfiguration() + "\n" +
                 "]");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        NodeEntity that = (NodeEntity) o;
+        return Objects.equals(_id, that._id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(_id);
     }
 }
