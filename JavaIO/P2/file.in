@@ -1,0 +1,3 @@
+1. Write a Java program that counts the number of times a particular character, such as a, appears in a txt file. The character can be specified at the command line. 
+2. Open a text file so that you can read the file one line at a time. Read each line as a String and place that String object into a LinkedList. Print all of the lines in the LinkedList in reverse order.
+3. Write a Java program that lists the contents of a folder (eg. C:\Windows) to a file, from the smallest to the largest. Mention type (file/folder), name size. Also experiment with filtering for specific filenames or extensions.

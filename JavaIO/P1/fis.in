@@ -1,0 +1,2 @@
+Write a Java program that counts the number of times a particular character, such as a, appears in a txt file.
+The character can be specified at the command line.
